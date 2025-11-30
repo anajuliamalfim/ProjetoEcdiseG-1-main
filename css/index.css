@@ -49,7 +49,7 @@ section.banner {
     text-align: center; 
 }
 
-section.banner span h1 {
+section.banner h1 span {
     color: #f8f5ea;
     margin: 20px 80px;
     font-size: 5vw;
@@ -60,16 +60,7 @@ section.banner img {
     border-radius: 30%;
 }
 
-section.banner p a button {
-    background-color: #1b0a02;
-    color: #b4b4a2;
-    padding: 30px 50px 30px 50px;
-    margin: 2vw 4vw;
-    border-color: #e9bda4;
-    border-radius: 20px;
-    font-weight: bold;
-    font-size: 1rem;
-}
+
 
 section.introducao {
     margin: 50px 100px;
@@ -155,7 +146,7 @@ section.introducao img {
     color: #fbf7ba;
     position: absolute;
     bottom: 5%;
-    right: -10%;
+    right: 100%;
     margin: 0;
 }
 

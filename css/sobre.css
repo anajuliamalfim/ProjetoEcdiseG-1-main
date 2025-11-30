@@ -202,6 +202,27 @@ section.equipe p {
     background-color: #ffffff;
 }
 
+.sobreProjeto {
+    padding: 5vw;
+    text-align: center;
+}
+
+.sobreProjeto h1 {
+    font-size: 3rem;
+    padding-bottom: 2px;
+    margin: 2vw 2vw;
+        background-color: #b19463 op;
+
+
+}
+
+.sobreProjeto p {
+    padding: 10px;
+    font-size: 1.5rem;
+    color: #000000;
+        margin: 2vw 2vw;
+}
+
 footer {
     background-color: #1b0a02;
     color: #b4b4a2;
