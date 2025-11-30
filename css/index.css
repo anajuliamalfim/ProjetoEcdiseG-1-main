@@ -4,7 +4,6 @@ html {
 
 a {
     text-decoration: none;
-   
 }
 
 header nav {
@@ -13,24 +12,23 @@ header nav {
     padding: 1vw 1vw 1vw 1vw;
     align-items: center;
     background-color: #1b0a02;
+}
 
-    & ul {
-        display: flex;
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
 
-    }
+header nav li {
+    margin: 0px 10px 0px 10px;
+}
 
-    & li {
-        margin: 0px 10px 0px 10px;
-    }
-
-    & a {
-        color: #7f7e5c;
-        display: block;
-        border: 2px solid #b4b383;
-        border-radius: 20px;
-        padding: 10px 20px;
-    }
-
+header nav a {
+    color: #7f7e5c;
+    display: block;
+    border: 2px solid #b4b383;
+    border-radius: 20px;
+    padding: 10px 20px;
 }
 
 header a.marcado {
@@ -47,15 +45,14 @@ section.banner {
     background: url(../images/fundo1.png);
     background-size: cover;
     margin: 0px 0px 0px 0px;
-
     padding: 10vw;
+    text-align: center; 
 }
 
 section.banner span h1 {
     color: #f8f5ea;
     margin: 20px 80px;
     font-size: 5vw;
-
 }
 
 section.banner img {
@@ -72,14 +69,11 @@ section.banner p a button {
     border-radius: 20px;
     font-weight: bold;
     font-size: 1rem;
-
 }
 
 section.introducao {
     margin: 50px 100px;
 }
-
-
 
 section.introducao h2 {
     font-size: 3vw;
@@ -92,8 +86,6 @@ section.introducao div {
     align-items: center;
     margin: 50px 100px;
     gap: 20px;
-
-
 }
 
 section.introducao span p {
@@ -105,12 +97,11 @@ section.introducao span p {
 section.introducao p {
     padding: 10px 5px;
     font-size: 1.3rem;
-
-
 }
 
-section.introducao img{
+section.introducao img {
     border-radius: 10vw;
+    max-width: 100%; 
 }
 
 .motivacao {
@@ -160,32 +151,26 @@ section.introducao img{
 }
 
 .disciplina-cursiva {
-
     font-size: 10vw;
     color: #fbf7ba;
     position: absolute;
     bottom: 5%;
     right: -10%;
-
     margin: 0;
 }
 
 section.disc {
     margin: 50px 100px;
-
 }
 
 section.disc h2 {
     font-size: 3vw;
-
     padding-bottom: 10rem;
 }
 
 section.disc img {
-
     max-width: 50%;
     padding: 30px 30px;
-
 }
 
 section.disc div {
@@ -217,4 +202,122 @@ section.explorando p {
     padding: 10px;
     font-size: 2rem;
     color: #301d03;
+}
+
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column; 
+        padding: 2vw;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav li {
+        margin: 5px 0;
+    }
+
+    header nav a,
+    header a.marcado {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    section.banner {
+        padding: 20vw 5vw; 
+    }
+
+    section.banner span h1 {
+        font-size: 8vw; 
+        margin: 10px 0;
+    }
+
+    section.banner p a button {
+        padding: 20px 30px;
+        margin: 5vw 2vw;
+        font-size: 0.8rem;
+    }
+
+    section.introducao {
+        margin: 20px 20px;
+    }
+
+    section.introducao h2 {
+        font-size: 5vw;
+        margin: 50px 0;
+    }
+
+    section.introducao div {
+        flex-direction: column; 
+        margin: 20px 0;
+        gap: 10px;
+    }
+
+    section.introducao span p {
+        font-size: 1.5rem;
+    }
+
+    section.introducao p {
+        font-size: 1rem;
+    }
+
+    section.introducao img {
+        max-width: 80%; 
+    }
+
+    .motivacao-conteudo div img {
+        max-width: 40%;
+    }
+
+    .motivacao-conteudo {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    .texto-grande {
+        font-size: 10vw;
+        text-align: center; 
+    }
+
+    .disciplina-cursiva {
+        font-size: 12vw;
+        position: static; 
+        margin-top: 10px;
+    }
+
+    section.disc {
+        margin: 20px 20px;
+    }
+
+    section.disc h2 {
+        font-size: 5vw;
+        padding-bottom: 5rem;
+    }
+
+    section.disc div {
+        flex-direction: column; 
+    }
+
+    section.disc img {
+        max-width: 80%;
+        padding: 10px;
+    }
+
+    section.disc p {
+        font-size: 1.5rem;
+    }
+
+    section.explorando {
+        padding: 20vw 5vw;
+    }
+
+    section.explorando h2 {
+        font-size: 3rem;
+    }
+
+    section.explorando p {
+        font-size: 1.5rem;
+    }
 }

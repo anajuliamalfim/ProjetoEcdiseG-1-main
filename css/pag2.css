@@ -4,7 +4,6 @@ html {
 
 a {
     text-decoration: none;
-   
 }
 
 header nav {
@@ -13,24 +12,23 @@ header nav {
     padding: 1vw 1vw 1vw 1vw;
     align-items: center;
     background-color: #1b0a02;
+}
 
-    & ul {
-        display: flex;
+header nav ul {
+    display: flex;
+    flex-wrap: wrap; 
+}
 
-    }
+header nav li {
+    margin: 0px 10px 0px 10px;
+}
 
-    & li {
-        margin: 0px 10px 0px 10px;
-    }
-
-    & a {
-        color: #7f7e5c;
-        display: block;
-        border: 2px solid #b4b383;
-        border-radius: 20px;
-        padding: 10px 20px;
-    }
-
+header nav a {
+    color: #7f7e5c;
+    display: block;
+    border: 2px solid #b4b383;
+    border-radius: 20px;
+    padding: 10px 20px;
 }
 
 header a.marcado {
@@ -46,12 +44,12 @@ section.corpo {
     background: url(../images/fundoIntrCorpo.png);
     background-size: cover;
     padding: 10vw;
+    text-align: center; 
 }
 
 section.corpo h1 {
     font-size: 1.5rem;
     padding-bottom: 10px;
-    text-align: center;
     font-weight: bolder;
     color: #ffffff;
 }
@@ -60,7 +58,6 @@ section.corpo h2 {
     padding: 10px;
     font-size: 4rem;
     color: #ffffff;
-    text-align: center;
 }
 
 section.corpo h2 span {
@@ -72,13 +69,12 @@ section.corpo p {
     font-size: 1.5rem;
     color: #ffffff;
     margin-top: 30px;
-    text-align: center;
 }
 
 section.tecnicasFoco {
     background-color: #4b5b21;
     padding: 10vw;
-
+    text-align: center;
 }
 
 section.tecnicasFoco h2 {
@@ -100,7 +96,6 @@ section.tecnicasFoco img {
     padding: 1vw 1vw;
     border: 2px solid #ffffff;
     border-radius: 20px;
-
 }
 
 section.distracoes {
@@ -111,12 +106,13 @@ section.distracoes {
 section.distracoes h2 {
     font-size: 4rem;
     padding-bottom: 2vw;
+    text-align: center; 
 }
 
 section.distracoes p.sub {
     font-size: 1.5rem;
     background-color: #b1c188;
-    display: inline;
+    display: inline-block; 
     padding: 10px 20px;
     border-radius: 20px;
     color: #ffffff;
@@ -127,6 +123,7 @@ section.distracoes ul {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    flex-wrap: wrap; 
 }
 
 section.distracoes ul li {
@@ -138,8 +135,8 @@ section.distracoes ul li {
     font-size: 1.5rem;
     color: white;
     border: 2px solid #702c04;
-    gap: 10px;
-
+    flex: 1; 
+    min-width: 200px; 
 }
 
 section.motivacaoCorpo {
@@ -188,6 +185,8 @@ section.celebrando p.passo {
     font-size: 2rem;
     color: #2c1d00;
     background-color: rgb(230, 229, 229);
+    margin: 0 auto; 
+    max-width: 80%;
 }
 
 section.celebrando img {
@@ -200,4 +199,123 @@ section.celebrando p.supercombo {
     font-size: 1.3rem;
     font-weight: bolder;
     color: #593a33;
+}
+
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column; 
+        padding: 2vw;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav li {
+        margin: 5px 0; 
+    }
+
+    header nav a,
+    header a.marcado {
+        padding: 8px 15px; 
+        font-size: 0.9rem;
+    }
+
+    section.corpo {
+        padding: 20vw 5vw;
+    }
+
+    section.corpo h1 {
+        font-size: 1.2rem;
+    }
+
+    section.corpo h2 {
+        font-size: 2.5rem;
+    }
+
+    section.corpo p {
+        font-size: 1.2rem;
+        margin-top: 20px;
+    }
+
+    section.tecnicasFoco {
+        padding: 15vw 5vw;
+    }
+
+    section.tecnicasFoco h2 {
+        font-size: 3rem;
+    }
+
+    section.tecnicasFoco p {
+        font-size: 1.2rem;
+    }
+
+    section.tecnicasFoco img {
+        max-width: 40%; 
+        margin: 5vw 0;
+        display: block; 
+    }
+
+    section.distracoes {
+        padding: 15vw 5vw;
+    }
+
+    section.distracoes h2 {
+        font-size: 2.5rem;
+    }
+
+    section.distracoes p.sub {
+        font-size: 1.2rem;
+        margin: 5vw 0;
+    }
+
+    section.distracoes ul {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    section.distracoes ul li {
+        padding: 5vw;
+        font-size: 1.2rem;
+        margin-top: 1vw;
+    }
+
+    section.motivacaoCorpo {
+        padding: 20vw 5vw;
+    }
+
+    section.motivacaoCorpo h2 {
+        font-size: 4rem;
+    }
+
+    section.motivacaoCorpo p span {
+        font-size: 1.5rem;
+    }
+
+    section.motivacaoCorpo p {
+        font-size: 2rem;
+    }
+
+    section.celebrando {
+        padding: 15vw 5vw;
+    }
+
+    section.celebrando h2 {
+        font-size: 3rem;
+    }
+
+    section.celebrando p.passo {
+        font-size: 1.5rem;
+        max-width: 90%;
+    }
+
+    section.celebrando img {
+        max-width: 50%;
+        margin-top: 5vw;
+    }
+
+    section.celebrando p.supercombo {
+        font-size: 1rem;
+    }
 }

@@ -4,7 +4,6 @@ html {
 
 a {
     text-decoration: none;
-   
 }
 
 header nav {
@@ -13,24 +12,23 @@ header nav {
     padding: 1vw 1vw 1vw 1vw;
     align-items: center;
     background-color: #1b0a02;
+}
 
-    & ul {
-        display: flex;
+header nav ul {
+    display: flex;
+    flex-wrap: wrap; 
+}
 
-    }
+header nav li {
+    margin: 0px 10px 0px 10px;
+}
 
-    & li {
-        margin: 0px 10px 0px 10px;
-    }
-
-    & a {
-        color: #7f7e5c;
-        display: block;
-        border: 2px solid #b4b383;
-        border-radius: 20px;
-        padding: 10px 20px;
-    }
-
+header nav a {
+    color: #7f7e5c;
+    display: block;
+    border: 2px solid #b4b383;
+    border-radius: 20px;
+    padding: 10px 20px;
 }
 
 header a.marcado {
@@ -46,6 +44,7 @@ section.conceito {
     background: url(../images/background6.png);
     background-size: cover;
     padding: 15vw;
+    text-align: center; 
 }
 
 section.conceito h2 {
@@ -71,7 +70,7 @@ section.distincao img {
 
 section.distincao p.marcacao {
     background-color: #a5b57c;
-    display: inline;
+    display: inline-block; 
     padding: 5px 20px;
     font-size: 1.5rem;
     color: #1b0a02;
@@ -79,7 +78,7 @@ section.distincao p.marcacao {
 
 section.distincao p.marcacaoDois {
     background-color: #84693c;
-    display: inline;
+    display: inline-block;
     padding: 5px 20px;
     font-size: 1.5rem;
     color: #ffffff;
@@ -89,6 +88,7 @@ section.distincao {
     background-color: #7f7e5c;
     background-size: cover;
     padding: 8vw;
+    text-align: center; 
 }
 
 section.distincao h2 {
@@ -104,13 +104,11 @@ section.distincao p {
     color: #ffffff;
 }
 
-
-
 section.influencias {
-
     background-color: #a5b57c;
     background-size: cover;
     padding: 8vw;
+    text-align: center; 
 }
 
 section.influencias p {
@@ -132,7 +130,7 @@ section.influencias p.marcacao {
     background-color: #84693c;
     color: white;
     border-radius: 20px;
-    display: inline;
+    display: inline-block; 
 }
 
 section.influencias h2 {
@@ -143,9 +141,8 @@ section.influencias h2 {
 }
 
 section.influencias span {
-    color: #84693c
+    color: #84693c;
 }
-
 
 section.influencias p {
     padding: 10px;
@@ -164,7 +161,7 @@ section.midia {
     background: url(../images/cadeiras.png);
     background-size: cover;
     padding: 10vw;
-
+    text-align: center; 
 }
 
 section.espaco {
@@ -176,6 +173,7 @@ section.espaco ul {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    flex-wrap: wrap; 
 }
 
 section.espaco ul li.itens {
@@ -183,7 +181,8 @@ section.espaco ul li.itens {
     background: #fffbf5;
     border: 3px solid #000000;
     gap: 20px;
-
+    flex: 1; 
+    min-width: 200px; 
 }
 
 section.espaco ul li h3 {
@@ -202,7 +201,7 @@ section.espaco ul li p {
     padding: 10px 20px;
     font-size: 1.2rem;
     color: #000000;
-    font-weight: bolder
+    font-weight: bolder;
 }
 
 section.espaco ul li p.uso {
@@ -220,14 +219,13 @@ section.espaco img {
     padding: 2px 10px;
     display: block;
     margin-left: auto;
-
     border: 1px solid #745a13;
     border-radius: 20px;
     background-color: #e9d7b6;
 }
 
 section.espaco p.funcao {
-    display: inline;
+    display: inline-block;
     padding: 10px 20px;
     background-color: #e9d7b6;
     color: #000000;
@@ -235,7 +233,6 @@ section.espaco p.funcao {
     font-weight: bolder;
     border: 2px solid #745a13;
     border-radius: 20px;
-
 }
 
 section.midia a button.conselhos {
@@ -244,7 +241,6 @@ section.midia a button.conselhos {
     font-weight: bolder;
     padding: 20px 50px 20px 50px;
     margin: 2vw 2vw;
-
 }
 
 section.midia a button {
@@ -253,8 +249,6 @@ section.midia a button {
     font-weight: bolder;
     padding: 20px 60px 20px 60px;
     margin: 1vw 1vw;
-
-
 }
 
 section.midia h2 {
@@ -270,11 +264,11 @@ section.midia p {
     color: #ffffff;
 }
 
-
 section.reflexoes {
     background: url(../images/background7.png);
     background-size: cover;
     padding: 15vw;
+    text-align: center; 
 }
 
 section.reflexoes h2 {
@@ -282,21 +276,19 @@ section.reflexoes h2 {
     padding-bottom: 18px;
     color: #f4efe5;
     font-weight: bolder;
-    text-align: center;
 }
 
 section.reflexoes p {
     padding: 20px 20px;
     font-size: 1.5rem;
     color: #ffffff;
-    text-align: center;
 }
 
 section.estudo {
     background-color: #7f7e5c;
     background-size: cover;
     padding: 5vw 5vw;
-    text-align: left
+    text-align: left;
 }
 
 section.estudo h2 {
@@ -308,8 +300,8 @@ section.estudo h2 {
 
 section.estudo ul {
     display: flex;
-
     gap: 5vw;
+    flex-wrap: wrap; 
 }
 
 section.estudo ul li {
@@ -317,15 +309,14 @@ section.estudo ul li {
     background: #e9d7b6;
     border: 3px solid #ffffff;
     gap: 10px;
-
+    flex: 1; 
+    min-width: 150px; 
 }
 
 section.estudo p.subDois {
     color: #ffffff;
     font-size: 1.5rem;
-
     padding: 10px 20px;
-
     margin: 2vw 1vw;
     border-radius: 20px;
 }
@@ -335,21 +326,16 @@ section.estudo ul li p {
     font-weight: bolder;
 }
 
-
-
 section.estudo p.sub {
     color: #fbf7ba;
     font-size: 1.3rem;
-
     margin: 3vw 2vw;
 }
-
 
 section.aprendizado {
     background: url(../images/pixelado.png);
     background-size: cover;
     padding: 8vw 8vw;
-
     text-align: center;
 }
 
@@ -374,13 +360,221 @@ section.aprendizado p.frase {
     font-weight: bolder;
     color: #fbf7ba;
     background-color: rgb(97, 61, 8);
-    display: inline;
+    display: inline-block; 
     border-radius: 5px;
 }
 
 section.aprendizado p {
     padding: 30px;
     font-size: 1.5rem;
-
     color: #f7f3aa;
+}
+
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column; 
+        padding: 2vw;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav li {
+        margin: 5px 0; 
+    }
+
+    header nav a,
+    header a.marcado {
+        padding: 8px 15px; 
+        font-size: 0.9rem;
+    }
+
+    section.conceito {
+        padding: 20vw 5vw;
+    }
+
+    section.conceito h2 {
+        font-size: 3rem;
+    }
+
+    section.conceito p {
+        font-size: 1.2rem;
+    }
+
+    section.distincao {
+        padding: 15vw 5vw;
+    }
+
+    section.distincao img {
+        max-width: 50%;
+    }
+
+    section.distincao h2 {
+        font-size: 3rem;
+        padding-bottom: 10vw;
+    }
+
+    section.distincao p {
+        font-size: 1.2rem;
+        margin: 5px 10px;
+    }
+
+    section.distincao p.marcacao,
+    section.distincao p.marcacaoDois {
+        font-size: 1.2rem;
+        padding: 5px 15px;
+    }
+
+    section.influencias {
+        padding: 15vw 5vw;
+    }
+
+    section.influencias h2 {
+        font-size: 3rem;
+    }
+
+    section.influencias p {
+        font-size: 1.2rem;
+        margin: 5px 10px;
+    }
+
+    section.influencias p.horas {
+        padding: 15px;
+    }
+
+    section.influencias p.marcacao {
+        font-size: 1.2rem;
+    }
+
+    section.midia {
+        padding: 15vw 5vw;
+    }
+
+    section.midia h3 {
+        font-size: 1rem;
+    }
+
+    section.midia h2 {
+        font-size: 3rem;
+    }
+
+    section.midia p {
+        font-size: 1rem;
+    }
+
+    section.midia a button,
+    section.midia a button.conselhos {
+        padding: 15px 30px;
+        margin: 5vw 1vw;
+        font-size: 0.9rem;
+    }
+
+    section.espaco {
+        padding: 15vw 5vw;
+    }
+
+    section.espaco ul {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    section.espaco ul li.itens {
+        margin-bottom: 10px;
+    }
+
+    section.espaco ul li h3 {
+        font-size: 1.5rem;
+    }
+
+    section.espaco ul li p.sub {
+        font-size: 1.2rem;
+    }
+
+    section.espaco ul li p {
+        font-size: 1rem;
+    }
+
+    section.espaco ul li p.uso {
+        font-size: 1rem;
+    }
+
+    section.espaco img {
+        max-width: 80%;
+        margin: 10px auto;
+    }
+
+    section.espaco p.funcao {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    section.reflexoes {
+        padding: 20vw 5vw;
+    }
+
+    section.reflexoes h2 {
+        font-size: 3rem;
+    }
+
+    section.reflexoes p {
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+
+    section.estudo {
+        padding: 10vw 5vw;
+        text-align: center; 
+    }
+
+    section.estudo h2 {
+        font-size: 2rem;
+    }
+
+    section.estudo ul {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    section.estudo ul li {
+        margin-bottom: 10px;
+    }
+
+    section.estudo p.subDois {
+        font-size: 1.2rem;
+        padding: 10px 15px;
+        margin: 5vw 1vw;
+    }
+
+    section.estudo ul li p {
+        font-size: 1rem;
+    }
+
+    section.estudo p.sub {
+        font-size: 1rem;
+        margin: 5vw 2vw;
+    }
+
+    section.aprendizado {
+        padding: 15vw 5vw;
+    }
+
+    section.aprendizado h3 {
+        font-size: 1rem;
+    }
+
+    section.aprendizado h2 {
+        font-size: 3rem;
+    }
+
+    section.aprendizado p.frase {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    section.aprendizado p {
+        font-size: 1.2rem;
+        padding: 20px;
+    }
 }
