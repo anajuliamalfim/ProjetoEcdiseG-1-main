@@ -316,3 +316,16 @@ section.beneficios p.passo {
         margin-top: 10vw;
     }
 }
+
+footer {
+    background-color: #1b0a02;
+    color: #b4b4a2;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 50px;
+}
+
+footer img {
+    width: 30px;
+    vertical-align: middle;
+}
