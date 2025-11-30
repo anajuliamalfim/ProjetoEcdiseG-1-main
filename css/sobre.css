@@ -1,4 +1,45 @@
 
+html {
+    background-color: #dcd5cf;
+}
+
+a {
+    text-decoration: none;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw 1vw 1vw 1vw;
+    align-items: center;
+    background-color: #1b0a02;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+header nav li {
+    margin: 0px 10px 0px 10px;
+}
+
+header nav a {
+    color: #7f7e5c;
+    display: block;
+    border: 2px solid #b4b383;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+header a.marcado {
+    border: 2px solid #b4b383;
+    background-color: #683d049c;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    display: block;
+    padding: 10px 20px;
+}
 .equipe {
      background-color: #f7f3aa;
     padding: 10vw;
@@ -21,7 +62,7 @@ section.equipe p {
     background-color: #f7f3aa;
 }
 
-section.quemSomos {
+.quemSomos {
     background-color: #f7f3aa;
     padding: 10vw;
     text-align: center;
@@ -30,7 +71,7 @@ section.quemSomos {
     gap: 20vw;
 }
 
-section.quemSomos p {
+.quemSomos p {
     padding: 10px;
     font-size: 2.5rem;
     color: #3a1b01;
@@ -172,4 +213,82 @@ footer {
 footer img {
     width: 30px;
     vertical-align: middle;
+}
+
+
+@media (min-width: 769px) and (max-width: 1199px) {
+    .equipe h1 {
+        font-size: 3rem;
+    }
+    .equipe p, .quemSomos p {
+        font-size: 1.2rem;
+    }
+    .slider {
+        width: 95%;
+        height: 400px;
+    }
+    .slide img {
+        width: 150px;
+    }
+    .quemSomos {
+        gap: 3vw;
+    }
+    .quemSomos p {
+        max-width: 60%;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .equipe {
+        padding: 10vw 5vw;
+    }
+    .equipe h1 {
+        font-size: 2rem;
+    }
+    .equipe p, .quemSomos p {
+        font-size: 1rem;
+    }
+    .quemSomos {
+        flex-direction: column;
+        gap: 2vw;
+        padding: 10vw 5vw;
+    }
+    .quemSomos p {
+        max-width: 100%;
+    }
+    .quemSomos img {
+        max-width: 80%;
+    }
+    .slider {
+        width: 100%;
+        height: 300px;
+    }
+    .slide {
+        padding: 0.5rem;
+    }
+    .slide img {
+        width: 100px;
+    }
+    .slider h1 {
+        font-size: 1.2rem;
+    }
+    .slider p {
+        font-size: 0.9rem;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav a {
+        font-size: 0.9rem;
+    }
+    footer {
+        padding: 1rem 0.5rem;
+    }
+    footer img {
+        width: 15px;
+    }
 }

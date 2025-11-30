@@ -73,14 +73,14 @@ section.feRelaTrab p.sub {
     margin-top: 5vw;
 }
 
-section.vidaAdolescente {
+.vidaAdolescente {
     background: url(../images/FundoPomba.png);
     padding: 10vw 10vw;
     background-size: cover;
     text-align: center;
 }
 
-section.vidaAdolescente p {
+.vidaAdolescente p {
     font-size: 3rem;
     padding-bottom: 18px;
     margin: 2vw 2vw;
