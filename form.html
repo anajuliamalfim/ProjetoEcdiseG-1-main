@@ -7,14 +7,12 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 
   <style>
-    /* Reset básico para consistência */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
 
-    /* Fundo geral da página */
     html {
       background-color: #dcd5cf;
     }
@@ -22,15 +20,11 @@
     body {
       font-family: system-ui, Arial, sans-serif;
       background: #dcd5cf;
-      /* Integrado à paleta */
       padding: 20px;
       color: #1b0a02;
-      /* Cor escura da paleta para texto */
       text-align: center;
-      /* Alinhamento central geral */
     }
 
-    /* Header nav - igual aos outros CSS */
     header nav {
       display: flex;
       justify-content: space-between;
@@ -56,7 +50,6 @@
       padding: 10px 20px;
       text-decoration: none;
       transition: background-color 0.3s ease;
-      /* Suavização */
     }
 
     header nav a:hover {
@@ -73,20 +66,16 @@
       padding: 10px 20px;
     }
 
-    /* Container principal do quiz */
     .caixa {
       max-width: 850px;
       margin: auto;
       background: #ffffff;
-      /* Fundo branco para contraste */
       padding: 25px;
       border-radius: 10px;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
       text-align: center;
-      /* Centraliza conteúdo interno */
     }
 
-    /* Títulos principais */
     h1 {
       margin-top: 0;
       color: #1b0a02;
@@ -94,14 +83,12 @@
       text-align: center;
     }
 
-    /* Parágrafos introdutórios */
     .caixa>p {
       margin-bottom: 20px;
       color: #7f7e5c;
       text-align: center;
     }
 
-    /* Perguntas */
     .pergunta {
       margin-bottom: 20px;
       padding-bottom: 10px;
@@ -117,7 +104,6 @@
       text-align: center;
     }
 
-    /* Opções de resposta */
     .opcoes label {
       display: block;
       margin: 5px 0;
@@ -125,13 +111,11 @@
       text-align: center;
     }
 
-    /* Botões */
     .botoes {
       margin-top: 20px;
       display: flex;
       gap: 10px;
       justify-content: center;
-      /* Centraliza botões */
       flex-wrap: wrap;
     }
 
@@ -139,7 +123,6 @@
       padding: 10px 15px;
       border-radius: 6px;
       border: 2px solid #b4b383;
-      /* Borda da paleta */
       cursor: pointer;
       background-color: #ffffff;
       color: #1b0a02;
@@ -162,12 +145,10 @@
       color: #ffffff;
     }
 
-    /* Resultado */
     .resultado {
       margin-top: 20px;
       padding: 15px;
       background: #f7f3aa;
-      /* Fundo leve da paleta */
       border: 1px solid #b4b383;
       border-radius: 6px;
       text-align: center;
@@ -177,7 +158,6 @@
       display: none;
     }
 
-    /* Footer - igual aos outros CSS */
     footer {
       background-color: #1b0a02;
       color: #b4b4a2;
@@ -191,9 +171,7 @@
       vertical-align: middle;
     }
 
-    /* Media Queries para Responsividade */
 
-    /* Tablet (769px a 1199px) */
     @media (min-width: 769px) and (max-width: 1199px) {
       header nav {
         padding: 2vw;
@@ -250,7 +228,6 @@
       }
     }
 
-    /* Mobile (até 768px) */
     @media (max-width: 768px) {
       header nav {
         flex-direction: column;
@@ -367,8 +344,7 @@
 
     <form id="formularioQuiz">
 
-      <!-- MODELO DE PERGUNTA -->
-      <!-- Todas seguem a mesma estrutura -->
+    
 
       <div class="pergunta" id="p1">
         <div class="titulo-pergunta">1. Como você avalia sua rotina no geral?</div>
